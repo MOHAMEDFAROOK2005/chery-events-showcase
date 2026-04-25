@@ -36,6 +36,13 @@ export const Route = createRootRoute({
       { name: "description", content: "Chery Events crafts unforgettable luxury weddings, birthdays and celebrations with bespoke design, premium décor and flawless execution." },
       { name: "author", content: "Chery Events" },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "Chery Events — Luxury Wedding & Event Planners" },
+      { name: "twitter:title", content: "Chery Events — Luxury Wedding & Event Planners" },
+      { property: "og:description", content: "Chery Events crafts unforgettable luxury weddings, birthdays and celebrations with bespoke design, premium décor and flawless execution." },
+      { name: "twitter:description", content: "Chery Events crafts unforgettable luxury weddings, birthdays and celebrations with bespoke design, premium décor and flawless execution." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93cc6f3f-df53-48d7-be63-029fc0e420db/id-preview-f56ff068--d352dfc7-7134-4183-a684-4a594ad51d19.lovable.app-1777096017078.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93cc6f3f-df53-48d7-be63-029fc0e420db/id-preview-f56ff068--d352dfc7-7134-4183-a684-4a594ad51d19.lovable.app-1777096017078.png" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
