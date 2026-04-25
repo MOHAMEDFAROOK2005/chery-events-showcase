@@ -138,6 +138,56 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .animate-float-delayed {
+    animation: float-delayed 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes float-delayed {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from { filter: drop-shadow(0 0 20px oklch(0.78 0.13 80 / 0.5)); }
+    to { filter: drop-shadow(0 0 30px oklch(0.88 0.1 85 / 0.8)); }
+  }
+
+  .hover-gold:hover {
+    background: linear-gradient(135deg, oklch(0.88 0.1 85), oklch(0.78 0.13 80));
+    background-size: 200% 200%;
+    animation: shimmer-gold 0.6s ease-in-out;
+  }
+
+  @keyframes shimmer-gold {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-rotate:hover {
+    transform: rotate(2deg) scale(1.02);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .animate-shimmer {
     background: linear-gradient(90deg, transparent, oklch(0.78 0.13 80 / 0.3), transparent);
     background-size: 200% 100%;

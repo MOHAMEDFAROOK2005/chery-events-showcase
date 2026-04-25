@@ -39,28 +39,28 @@ function Home() {
         <div className="absolute inset-0 bg-background/30" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center animate-fade-up">
-          <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary mb-6">
+          <p className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary mb-6 animate-float">
             ✦ Luxury Event Planners ✦
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05]">
-            Crafting <em className="text-gradient-gold not-italic">Unforgettable</em>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.05] animate-float-delayed animate-glow">
+            Crafting <em className="text-gradient-gold not-italic hover-gold">Unforgettable</em>
             <br /> Events
           </h1>
-          <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-float">
             From intimate ceremonies to grand celebrations — we design and orchestrate luxury
             experiences that turn moments into memories.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-primary-foreground rounded-full text-sm font-medium tracking-wider uppercase hover:shadow-gold transition-all duration-300"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-primary-foreground rounded-full text-sm font-medium tracking-wider uppercase hover:shadow-gold transition-all duration-300 hover-scale"
             >
               Book Your Event
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/gallery"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-primary/40 text-foreground rounded-full text-sm font-medium tracking-wider uppercase hover:bg-primary/10 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-primary/40 text-foreground rounded-full text-sm font-medium tracking-wider uppercase hover:bg-primary/10 transition-all hover-rotate"
             >
               View Gallery
             </Link>
@@ -78,7 +78,7 @@ function Home() {
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-primary mb-4">About Chery Events</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
-              Where every detail tells a <em className="text-gradient-gold not-italic">story</em>
+              Where every detail tells a <em className="text-gradient-gold not-italic hover-gold">story</em>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed text-lg">
               Chery Events is a premier event design house dedicated to creating extraordinary
@@ -113,7 +113,7 @@ function Home() {
             { icon: Users, num: "50K+", label: "Happy Guests" },
             { icon: Award, num: "12+", label: "Years of Excellence" },
           ].map(({ icon: Icon, num, label }) => (
-            <div key={label}>
+            <div key={label} className="hover-scale transition-all duration-300">
               <Icon className="mx-auto text-primary mb-3" size={28} />
               <div className="font-display text-4xl md:text-5xl text-gradient-gold">{num}</div>
               <div className="text-xs uppercase tracking-widest text-muted-foreground mt-2">{label}</div>
@@ -131,8 +131,8 @@ function Home() {
         />
         <div className="max-w-7xl mx-auto mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {featured.map(({ icon: Icon, name, desc }) => (
-            <div key={name} className="group p-8 bg-card gold-border rounded-2xl hover-lift">
-              <div className="w-14 h-14 rounded-full bg-gradient-gold flex items-center justify-center mb-5">
+            <div key={name} className="group p-8 bg-card gold-border rounded-2xl hover-lift hover-rotate">
+              <div className="w-14 h-14 rounded-full bg-gradient-gold flex items-center justify-center mb-5 hover-scale">
                 <Icon className="text-primary-foreground" size={24} />
               </div>
               <h3 className="font-display text-2xl text-foreground">{name}</h3>
@@ -153,7 +153,7 @@ function Home() {
         <div className="absolute inset-0 bg-background/70" />
         <div className="relative max-w-3xl mx-auto text-center">
           <h2 className="font-display text-4xl md:text-6xl leading-tight">
-            Ready to create something <em className="text-gradient-gold not-italic">extraordinary?</em>
+            Ready to create something <em className="text-gradient-gold not-italic hover-gold">extraordinary?</em>
           </h2>
           <p className="mt-6 text-muted-foreground text-lg">
             Let's bring your vision to life. Get in touch for a personalised consultation.

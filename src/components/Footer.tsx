@@ -39,7 +39,7 @@ export function Footer() {
           <ul className="space-y-3 text-muted-foreground text-sm">
             <li className="flex items-start gap-2"><Phone size={16} className="mt-0.5 text-primary" /> +91 98765 43210</li>
             <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5 text-primary" /> hello@cheryevents.com</li>
-            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 text-primary" /> Kerala, India</li>
+            <li className="flex items-start gap-2"><MapPin size={16} className="mt-0.5 text-primary" /> Madurai, Tamil Nadu</li>
           </ul>
         </div>
       </div>

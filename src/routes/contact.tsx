@@ -83,9 +83,9 @@ function Contact() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-primary">Visit</p>
-                <p className="font-display text-2xl text-foreground mt-1">Kerala, India</p>
+                <p className="font-display text-2xl text-foreground mt-1">Madurai, Tamil Nadu</p>
                 <a
-                  href="https://maps.app.goo.gl/JGU27Zfz1Ethm2u28"
+                  href="https://maps.app.goo.gl/example"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground mt-1 hover:text-primary inline-block"
@@ -168,7 +168,7 @@ function Contact() {
         <div className="max-w-7xl mx-auto mt-12 rounded-2xl overflow-hidden gold-border h-[400px]">
           <iframe
             title="Chery Events Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125782.9!2d76.27108!3d9.9312328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d08d1981f73%3A0xf2d5b6a01a3a8b6e!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125782.9!2d78.1197!3d9.9252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00bff58e8a5c3f%3A0x7a9c9b5c5d5e5f5e!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000"
             width="100%"
             height="100%"
             style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg) brightness(0.95)" }}
